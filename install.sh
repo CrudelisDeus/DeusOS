@@ -38,3 +38,9 @@ sudo pacman -S wofi
 
 # browser 
 sudo pacman -S firefox
+
+# Editor
+sudo pacman -S vim
+
+# HyprLAND
+sudo pacman -S hyprland
