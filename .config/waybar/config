@@ -7,49 +7,57 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
-        "sway/scratchpad",
-        "custom/media"
+        "cpu",
+        "memory",
+        "custom/media",
+        "network"
     ],
     "modules-center": [
-        "clock",
-        "sway/window"
+        "hyprland/workspaces",
+        "hyprland/mode",
+        "hyprland/scratchpad",
+//      "hyprland/window"
     ],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
+//      "idle_inhibitor",
         "pulseaudio",
-        "network",
         "power-profiles-daemon",
-        "cpu",
-        "memory",
         "temperature",
         "backlight",
         "keyboard-state",
-        "sway/language",
         "battery",
         "battery#bat2",
         "tray",
-        "custom/power"
+        "hyprland/language",
+    	"clock"
+//	"custom/power"
     ],
+    // Language
+    "hyprland/language": {
+        "format": "{short}"
+    },
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{icon}",
+	"on-click": "activate",
+	"persistent-workspaces": {
+	    "*": 5
+	},
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
