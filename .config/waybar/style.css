@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "FontAwesome", "JetBrainsMono Nerd Font", "Symbols Nerd Font", "Noto Sans", "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 13px;
 }
 
@@ -49,9 +49,11 @@ button:hover {
 }
 
 /* you can set a style on hover for any module like this */
+/*
 #pulseaudio:hover {
     background-color: #a37800;
 }
+*/
 
 #workspaces button {
     padding: 0 5px;
@@ -114,7 +116,9 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+/*    background-color: #64727D; */
+    margin: 0;
+    padding: 0 5px;
 }
 
 #battery {
@@ -169,16 +173,24 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+/*    background-color: #2ecc71;
+    color: #000000; */
+    margin: 0;
+    padding: 0 5px;
 }
 
 #memory {
-    background-color: #9b59b6;
-}
+    /* background-color: #9b59b6;
+    */
+    margin: 0;
+    padding: 0 5px;    
+}  
 
 #disk {
-    background-color: #964B00;
+/*    color: #ffffff;
+    background-color: #964B00; */
+    padding: 0 5px;
+    margin: 0;
 }
 
 #backlight {
@@ -186,7 +198,11 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+/*    background-color: #2980b9;
+*/
+    margin: 0;
+    padding: 0 10px 0 0;    
+
 }
 
 #network.disconnected {
@@ -194,8 +210,11 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
+/*    background-color: #f1c40f;
     color: #000000;
+*/
+    margin: 0;
+    padding: 0 10px
 }
 
 #pulseaudio.muted {
@@ -274,11 +293,14 @@ label:focus {
 }
 
 #language {
+/*
     background: #00b093;
     color: #740864;
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;
+*/
+    padding: 0 10px 0 0;    
 }
 
 #keyboard-state {

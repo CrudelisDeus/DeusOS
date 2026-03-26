@@ -7,10 +7,10 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+	"disk",
         "cpu",
         "memory",
-        "custom/media",
-        "network"
+        "custom/media"
     ],
     "modules-center": [
         "hyprland/workspaces",
@@ -30,12 +30,20 @@
         "battery#bat2",
         "tray",
         "hyprland/language",
+        "network",
     	"clock"
 //	"custom/power"
     ],
-    // Language
+     // Language
     "hyprland/language": {
         "format": "{short}"
+    },  
+    // Disk
+    "disk": {
+        "interval": 10,
+	"path": "/",
+	"format": "{percentage_used}% ",
+	"tooltip-format": "{path}\nUsed: {used}\nFree: {free}\nTotal:  {total}"
     },
     // Modules configuration
     "hyprland/workspaces": {
@@ -120,16 +128,19 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-	"format": "{:%I:%M %p | %d %b}",
+	// "format": "{:%I:%M %p | %d %b}",
+	"format": "{:%I:%M %p %z}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         // "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
+	"interval": 1
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% 󰘚",
+	"interval": 1
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -176,11 +187,14 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+//        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-ethernet": "󰈀",
+//        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format": "{ipaddr}/{cidr}\ndownload: {bandwidthDownBytes}\nupload: {bandwidthUpBytes}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-disconnected": "⚠",
+	"interval": 1
+//        "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
