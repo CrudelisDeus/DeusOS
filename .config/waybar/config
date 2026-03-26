@@ -15,7 +15,7 @@
     "modules-center": [
         "hyprland/workspaces",
         "hyprland/mode",
-        "hyprland/scratchpad",
+        "hyprland/scratchpad"
 //      "hyprland/window"
     ],
     "modules-right": [
