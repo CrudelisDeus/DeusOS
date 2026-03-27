@@ -10,6 +10,7 @@
 	"disk",
         "cpu",
         "memory",
+        "tray",
         "custom/media"
     ],
     "modules-center": [
@@ -28,7 +29,6 @@
         "keyboard-state",
         "battery",
         "battery#bat2",
-        "tray",
         "hyprland/language",
         "network",
     	"clock"

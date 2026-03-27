@@ -183,7 +183,7 @@ label:focus {
     /* background-color: #9b59b6;
     */
     margin: 0;
-    padding: 0 5px;    
+    padding: 0 10px 0 0px;    
 }  
 
 #disk {
@@ -214,7 +214,7 @@ label:focus {
     color: #000000;
 */
     margin: 0;
-    padding: 0 10px
+    padding: 0 10px 0 0;
 }
 
 #pulseaudio.muted {
@@ -254,7 +254,9 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    /*background-color: #2980b9;*/
+    margin: 0;
+    padding: 0 5px;
 }
 
 #tray > .passive {
