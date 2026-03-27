@@ -213,3 +213,5 @@ __marimo__/
 !.config/hypr/
 !.config/waybar/
 !.config/waybar/**
+!.config/alacritty/
+!.config/alacritty/**
