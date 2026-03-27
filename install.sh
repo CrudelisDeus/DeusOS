@@ -31,7 +31,7 @@ sudo pacman -S qt6-multimedia-backend-ffmpeg
 sudo pacman -S alacritty kitty
 
 # file manager
-sudo pacman -S dolphin
+sudo pacman -S nautilus
 
 # launcher
 sudo pacman -S wofi
