@@ -11,6 +11,13 @@ sudo pacman -S wl-clipboard cliphist
 # alerts
 sudo pacman -S libnotify swaync
 
+# sound 
+#sudo pacman -S pipewire-jack
+#sudo pacman -S pipewire pipewire-alsa pipewire-pulse wireplumber
+sudo pacman -S --noconfirm pipewire-jack
+sudo pacman -S --noconfirm pipewire pipewire-alsa pipewire-pulse wireplumber pipewire-jack
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
+
 # XDG Desktop Portal
 sudo pacman -S xdg-desktop-portal-hyprland xdg-desktop-portal-gtk
 systemctl --user enable --now xdg-desktop-portal.service  
@@ -18,11 +25,6 @@ systemctl --user enable --now xdg-desktop-portal-hyprland.service
 
 # status bar
 sudo pacman -S waybar
-
-# sound 
-sudo pacman -S pipewire-jack
-sudo pacman -S pipewire pipewire-alsa pipewire-pulse wireplumber
-systemctl --user enable --now pipewire pipewire-pulse wireplumber
 
 # video
 sudo pacman -S qt6-multimedia-backend-ffmpeg
