@@ -7,16 +7,16 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-	"disk",
-        "cpu",
-        "memory",
+        "hyprland/workspaces",
+        "hyprland/mode",
+        "hyprland/scratchpad",
         "tray",
         "custom/media"
     ],
     "modules-center": [
-        "hyprland/workspaces",
-        "hyprland/mode",
-        "hyprland/scratchpad"
+	"disk",
+        "cpu",
+        "memory"
 //      "hyprland/window"
     ],
     "modules-right": [
@@ -45,25 +45,39 @@
 	"format": "{percentage_used}% ",
 	"tooltip-format": "{path}\nUsed: {used}\nFree: {free}\nTotal:  {total}"
     },
+ 
+//    "hyprland/workspaces": {
+//        "disable-scroll": true,
+//        "all-outputs": true,
+//        "warp-on-scroll": false,
+//        "format": "{icon}",
+//	"on-click": "activate",
+//	"persistent-workspaces": {
+//	    "*": 5
+//	},
+//       "format-icons": {
+//            "1": "",
+//            "2": "",
+//            "3": "",
+//            "4": "",
+//            "5": "",
+///            "urgent": "",
+//            "focused": "",
+//            "default": ""
+//        }
+//    },
     // Modules configuration
     "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "warp-on-scroll": false,
         "format": "{icon}",
 	"on-click": "activate",
 	"persistent-workspaces": {
 	    "*": 5
 	},
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "urgent": "",
-            "focused": "",
-            "default": ""
+            "active": "",
+            "persistent": "󰻂",
+	    "empty": "󰽤",
+            "default": "󰽤"
         }
     },
     "keyboard-state": {
@@ -188,17 +202,17 @@
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
 //        "format-ethernet": "{ipaddr}/{cidr} ",
-        "format-ethernet": "󰈀",
+        "format-ethernet": "󰌗 UP",
 //        "tooltip-format": "{ifname} via {gwaddr} ",
         "tooltip-format": "{ipaddr}/{cidr}\ndownload: {bandwidthDownBytes}\nupload: {bandwidthUpBytes}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "⚠",
+        "format-disconnected": "󰌙 DOWN",
 	"interval": 1
 //        "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% {icon}  {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
