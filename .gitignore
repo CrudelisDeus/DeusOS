@@ -215,3 +215,5 @@ __marimo__/
 !.config/waybar/**
 !.config/alacritty/
 !.config/alacritty/**
+!.config/swaync/
+!.config/swaync/**

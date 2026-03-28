@@ -31,7 +31,8 @@
         "battery#bat2",
         "hyprland/language",
         "network",
-    	"clock"
+    	"clock",
+	"custom/notification"
 //	"custom/power"
     ],
      // Language
@@ -66,7 +67,21 @@
 //            "default": ""
 //        }
 //    },
-    // Modules configuration
+
+    // Notification
+"custom/notification": {
+  "exec": "swaync-client -swb",
+  "return-type": "json",
+  "format": "{icon}",
+  "format-icons": {
+    "notification": "󰂚",
+    "none": "󰂜",
+    "dnd": "󰂛"
+  },
+  "on-click": "swaync-client -t"
+},
+
+   // Modules configuration
     "hyprland/workspaces": {
         "format": "{icon}",
 	"on-click": "activate",
