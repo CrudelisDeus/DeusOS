@@ -37,6 +37,7 @@ sudo pacman -S yazi
 sudo pacman -S yazi ffmpegthumbnailer poppler fd ripgrep
 sudo pacman -S fzf zoxide
 sudo pacman -S chafa
+sudo pacman -S resvg
 
 # launcher
 sudo pacman -S wofi
@@ -46,6 +47,9 @@ sudo pacman -S firefox
 
 # Editor
 sudo pacman -S vim
+
+# Archive
+sudo pacman -S 7zip
 
 # HyprLAND
 sudo pacman -S hyprland
