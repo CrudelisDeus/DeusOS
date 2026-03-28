@@ -9,3 +9,6 @@ mouse = true
 open = [
   { run = 'xdg-open "$@"', desc = "Open" }
 ]
+
+[preview]
+image = true

@@ -221,3 +221,5 @@ __marimo__/
 !.config/theme/**
 !.config/yazi/
 !.config/yazi/**
+!.config/kitty/
+!.config/kitty/**

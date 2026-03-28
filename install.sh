@@ -36,6 +36,7 @@ sudo pacman -S alacritty kitty
 sudo pacman -S yazi
 sudo pacman -S yazi ffmpegthumbnailer poppler fd ripgrep
 sudo pacman -S fzf zoxide
+sudo pacman -S chafa
 
 # launcher
 sudo pacman -S wofi
