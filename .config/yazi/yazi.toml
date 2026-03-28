@@ -1,0 +1,11 @@
+[mgr]
+show_hidden = true
+sort_by = "natural"
+sort_reverse = false
+linemode = "size"
+mouse = true
+
+[opener]
+open = [
+  { run = 'xdg-open "$@"', desc = "Open" }
+]

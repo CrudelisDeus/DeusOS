@@ -219,3 +219,5 @@ __marimo__/
 !.config/swaync/**
 !.config/theme/
 !.config/theme/**
+!.config/yazi/
+!.config/yazi/**

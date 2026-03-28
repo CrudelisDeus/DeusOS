@@ -33,7 +33,9 @@ sudo pacman -S qt6-multimedia-backend-ffmpeg
 sudo pacman -S alacritty kitty
 
 # file manager
-sudo pacman -S nautilus
+sudo pacman -S yazi
+sudo pacman -S yazi ffmpegthumbnailer poppler fd ripgrep
+sudo pacman -S fzf zoxide
 
 # launcher
 sudo pacman -S wofi
