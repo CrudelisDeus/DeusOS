@@ -217,3 +217,5 @@ __marimo__/
 !.config/alacritty/**
 !.config/swaync/
 !.config/swaync/**
+!.config/theme/
+!.config/theme/**

@@ -44,7 +44,10 @@
         "interval": 10,
 	"path": "/",
 	"format": "{percentage_used}% ",
-	"tooltip-format": "{path}\nUsed: {used}\nFree: {free}\nTotal:  {total}"
+	"tooltip-format": "{path}\nUsed: {used}\nFree: {free}\nTotal:  {total}",
+	"states": {
+	    "critical": 90
+	}
     },
  
 //    "hyprland/workspaces": {
@@ -165,11 +168,17 @@
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
-	"interval": 1
+	"interval": 1,
+	"states": {
+	    "critical": 90
+	}
     },
     "memory": {
         "format": "{}% 󰘚",
-	"interval": 1
+	"interval": 1,
+	"states": {
+	    "critical": 90
+	}
     },
     "temperature": {
         // "thermal-zone": 2,
