@@ -51,5 +51,9 @@ sudo pacman -S vim
 # Archive
 sudo pacman -S 7zip
 
+# Shell output
+sudo pacman -S bat eza
+sudo pacman -S btop fastfetch less
+
 # HyprLAND
 sudo pacman -S hyprland
