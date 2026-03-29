@@ -5,19 +5,12 @@
   font-size: 13px;
 }
 
-.notification-row {
-  outline: none;
-  margin: 6px 10px;
-  padding: 0;
-}
-
 .notification {
   border-radius: 12px;
-  background: rgba(20, 20, 20, 0.18);
+  background: rgba(26, 26, 26, 0.42);
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: none;
   border: 2px solid @main;
+  box-shadow: none;
 }
 
 .notification-content {
@@ -26,39 +19,13 @@
   border-radius: 12px;
 }
 
-.notification-default-action,
-.notification-action {
-  background: transparent;
-  color: #ffffff;
-  border-radius: 10px;
-}
-
-.notification-default-action:hover,
-.notification-action:hover {
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.close-button {
-  background: rgba(255, 255, 255, 0.10);
-  color: #ffffff;
-  border-radius: 999px;
-}
-
-.close-button:hover {
-  background: rgba(255, 255, 255, 0.18);
-}
-
 .control-center {
   border-radius: 16px;
-  background: rgba(20, 20, 20, 0.20);
+  background: rgba(26, 26, 26, 0.46);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.control-center-list {
-  background: transparent;
-}
-
 .control-center .notification-row .notification {
-  background: rgba(20, 20, 20, 0.16);
+  background: rgba(26, 26, 26, 0.38);
 }
