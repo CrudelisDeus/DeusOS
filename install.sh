@@ -62,3 +62,4 @@ sudo pacman -S btop fastfetch less
 
 # HyprLAND
 sudo pacman -S hyprland
+sudo pacman -S hyprlock

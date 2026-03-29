@@ -207,6 +207,10 @@ marimo/_lsp/
 __marimo__/
 
 
+# yay 
+yay/
+yay/**
+
 # os
 .config/*
 !.config/hypr/**

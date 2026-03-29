@@ -167,7 +167,7 @@
 //    },
 
 "clock": {
-    "format": "{:%I:%M %p %z}",
+    "format": "{:%I:%M %p %z %a}",
     "tooltip-format": "<big>{:%Y %b}</big>\n<tt><small>{calendar}</small></tt>",
     "calendar": {
         "mode": "month",
