@@ -243,6 +243,14 @@ label:focus {
 
 }
 
+#custom-power {
+/*    background-color: #2980b9;
+*/
+    margin: 0;
+    padding: 0 0 0 5px;    
+
+}
+
 #custom-notification.notification {
     color: @main;
 }

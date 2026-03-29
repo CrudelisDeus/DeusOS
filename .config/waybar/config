@@ -32,8 +32,8 @@
         "hyprland/language",
         "network",
     	"clock",
-	"custom/notification"
-//	"custom/power"
+	"custom/notification",
+	"custom/power"
     ],
      // Language
     "hyprland/language": {
@@ -167,7 +167,7 @@
 //    },
 
 "clock": {
-    "format": "{:%I:%M %p %z %a}",
+    "format": "{:%I:%M %p %z %d %a}",
     "tooltip-format": "<big>{:%Y %b}</big>\n<tt><small>{calendar}</small></tt>",
     "calendar": {
         "mode": "month",
@@ -283,11 +283,12 @@
 		"tooltip": false,
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
-		}
+"menu-actions": {
+  "lock": "hyprlock",
+  "logout": "hyprctl dispatch exit",
+  "shutdown": "systemctl poweroff",
+  "reboot": "systemctl reboot"
+}
+
     }
 }
