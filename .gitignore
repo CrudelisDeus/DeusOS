@@ -225,3 +225,5 @@ __marimo__/
 !.config/kitty/**
 !.config/scripts/
 !.config/scripts/**
+!.config/nvim/
+!.config/nvim/**

@@ -48,6 +48,7 @@ sudo pacman -S firefox
 # Editor
 sudo pacman -S vim
 sudo pacman -S neovim git
+sudo pacman -S base-devel
 
 # Mirrors
 sudo pacman -S reflector
