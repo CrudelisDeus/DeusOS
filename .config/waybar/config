@@ -158,13 +158,25 @@
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
         // }
     },
-    "clock": {
+//    "clock": {
         // "timezone": "America/New_York",
 	// "format": "{:%I:%M %p | %d %b}",
-	"format": "{:%I:%M %p %z}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+//	"format": "{:%I:%M %p %z}",
+//        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         // "format-alt": "{:%Y-%m-%d}"
-    },
+//    },
+
+"clock": {
+    "format": "{:%I:%M %p %z}",
+    "tooltip-format": "<big>{:%Y %b}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+        "mode": "month",
+        "format": {
+            "today": "<span background='#9f4559'>{}</span>"
+        }
+    }
+},
+
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
@@ -174,8 +186,9 @@
 	}
     },
     "memory": {
-        "format": "{}% 󰘚",
+        "format": "{percentage}% 󰘚",
 	"interval": 1,
+        "tooltip": true,
 	"states": {
 	    "critical": 90
 	}
