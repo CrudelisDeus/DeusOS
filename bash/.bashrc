@@ -7,6 +7,7 @@ export VISUAL=vim
 
 alias ls='eza -lah --icons --group-directories-first --time-style=long-iso'
 alias cat='bat' 
+alias top='btop'
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
