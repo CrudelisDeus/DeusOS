@@ -227,3 +227,5 @@ __marimo__/
 !.config/scripts/**
 !.config/nvim/
 !.config/nvim/**
+!.config/wofi/
+!.config/wofi/**

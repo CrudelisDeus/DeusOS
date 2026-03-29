@@ -1,0 +1,45 @@
+@import "../theme/colors.css";
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+window {
+  background: rgba(26, 26, 26, 0.45);
+  border-radius: 12px;
+  border: 1px solid #9f4559; /* можно @main если хочешь */
+}
+
+#input {
+  margin: 8px;
+  padding: 8px 12px;
+
+  background: rgba(26, 26, 26, 0.65); /* плотнее */
+  color: $ffffff;
+
+  border-radius: 10px;
+  border: 1px solid #9f4559;
+}
+
+#inner-box {
+  margin: 6px;
+}
+
+#outer-box {
+  padding: 6px;
+}
+
+#scroll {
+  margin: 4px 0;
+}
+
+#entry {
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+#entry:selected {
+  background: rgba(159, 69, 89, 0.5); /* твой selection */
+  color: #ffffff;
+}
