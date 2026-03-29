@@ -5,6 +5,12 @@
 export EDITOR=vim
 export VISUAL=vim
 
+# script
+
+source ~/.config/scripts/pacup.sh
+
+# alias
+
 alias ls='eza -lah --icons --group-directories-first --time-style=long-iso'
 alias cat='bat' 
 alias top='btop'

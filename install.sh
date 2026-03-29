@@ -47,6 +47,10 @@ sudo pacman -S firefox
 
 # Editor
 sudo pacman -S vim
+sudo pacman -S neovim git
+
+# Mirrors
+sudo pacman -S reflector
 
 # Archive
 sudo pacman -S 7zip
