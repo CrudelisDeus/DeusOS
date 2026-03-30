@@ -10,11 +10,14 @@
         "hyprland/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad",
+        "power-profiles-daemon",
+        "temperature",
+        "battery",
         "tray",
         "custom/media"
     ],
     "modules-center": [
-	"disk",
+	      "disk",
         "cpu",
         "memory"
 //      "hyprland/window"
@@ -23,11 +26,8 @@
         "mpd",
 //      "idle_inhibitor",
         "pulseaudio",
-        "power-profiles-daemon",
-        "temperature",
-        "backlight",
+//      "backlight",
         "keyboard-state",
-        "battery",
         "battery#bat2",
         "hyprland/language",
         "network",
@@ -212,11 +212,11 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
+        "format": "{capacity}% {icon} ",
+        //"format-full": "{capacity}% {icon}",
+        //"format-charging": "{capacity}% ",
+        //"format-plugged": "{capacity}% ",
+        //"format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
@@ -237,11 +237,11 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "  UP",
 //        "format-ethernet": "{ipaddr}/{cidr} ",
         "format-ethernet": "󰌗 UP",
 //        "tooltip-format": "{ifname} via {gwaddr} ",
-        "tooltip-format": "{ipaddr}/{cidr}\ndownload: {bandwidthDownBytes}\nupload: {bandwidthUpBytes}",
+        "tooltip-format": "{ipaddr}/{cidr}\ndownload: {bandwidthDownBytes}\nupload: {bandwidthUpBytes}\n{essid} ({signalStrength}%)",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "󰌙 DOWN",
 	"interval": 1
