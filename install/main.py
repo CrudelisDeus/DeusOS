@@ -1,6 +1,7 @@
 import subprocess
 
 from pkg import std_pkg
+from pkg import home_and_work_pkg
 from services import services
 
 
@@ -87,6 +88,9 @@ def main():
     install_pkg(std_pkg)
     service_enable_and_start(services)
     full_update()
+
+    # home_and_work
+    install_pkg(home_and_work_pkg)
 
 if __name__ == '__main__':
     main()

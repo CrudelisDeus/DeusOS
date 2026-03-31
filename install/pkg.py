@@ -79,3 +79,12 @@ std_pkg = [
     # lockscreen
     "hyprlock",
 ]
+
+home_and_work_pkg = [
+    # messenger
+    "telegram-desktop",
+    "discord",
+
+    # visual editor
+    "krita",
+]
