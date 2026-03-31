@@ -9,7 +9,7 @@
   border-radius: 12px;
   background: rgba(26, 26, 26, 0.42);
   color: #ffffff;
-  border: 2px solid @main;
+  border: 1px solid @main;
   box-shadow: none;
 }
 
@@ -24,6 +24,7 @@
   background: rgba(26, 26, 26, 0.46);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.08);
+  border-color: @main;
 }
 
 .control-center .notification-row .notification {
