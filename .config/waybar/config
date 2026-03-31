@@ -237,11 +237,11 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "  UP",
+        "format-wifi": "  UP ({signalStrength}%)",
 //        "format-ethernet": "{ipaddr}/{cidr} ",
         "format-ethernet": "󰌗 UP",
 //        "tooltip-format": "{ifname} via {gwaddr} ",
-        "tooltip-format": "{ipaddr}/{cidr}\ndownload: {bandwidthDownBytes}\nupload: {bandwidthUpBytes}\n{essid} ({signalStrength}%)",
+        "tooltip-format": "{ipaddr}/{cidr}\ndownload: {bandwidthDownBytes}\nupload: {bandwidthUpBytes}\n{essid}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "󰌙 DOWN",
 	"interval": 1
