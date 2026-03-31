@@ -4,6 +4,47 @@ from pkg import std_pkg
 from services import services
 
 
+def full_update() -> None:
+    try:
+        subprocess.run(
+            [
+                'sudo',
+                'reflector',
+                '--latest',
+                '20', 
+                '--age', 
+                '12', 
+                '--protocol',
+                'https',
+                '--sort',
+                'rate',
+                '--save',
+                '/etc/pacman.d/mirrorlist'
+            ],
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        subprocess.run(
+            [
+                'sudo',
+                'pacman',
+                '-Syyu',
+                '--noconfirm',
+            ],
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        result = 0
+    except Exception as e:
+        result = 1
+
+    if result != 0:
+        print('upt FAILED')
+    else:
+        print('upt OK')
+
 def install_pkg(pkgs: list) -> None:
     for pkg in pkgs:
         try:
@@ -45,7 +86,7 @@ def service_enable_and_start(services: list) -> None:
 def main():
     install_pkg(std_pkg)
     service_enable_and_start(services)
-
+    full_update()
 
 if __name__ == '__main__':
     main()
