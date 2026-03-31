@@ -87,4 +87,12 @@ home_and_work_pkg = [
 
     # visual editor
     "krita",
+
+    # notes
+    "obsidian",
+]
+
+work_pkg = [
+    # vpn
+    "strongswan",
 ]
