@@ -17,7 +17,7 @@
         "custom/media"
     ],
     "modules-center": [
-	      "disk",
+	"disk",
         "cpu",
         "memory"
 //      "hyprland/window"
@@ -84,21 +84,18 @@
   "on-click": "swaync-client -t"
 },
 
-   // Modules configuration
-    "hyprland/workspaces": {
-        "format": "{icon}",
-	"on-click": "activate",
-	"persistent-workspaces": {
-	    "*": 5
-	},
-        "format-icons": {
-            "active": "",
-            "persistent": "󰻂",
-	    "empty": "󰽤",
-            "default": "󰽤"
-        }
-    },
-    "keyboard-state": {
+"hyprland/workspaces": {
+  "format": "{id}",
+  "on-click": "activate",
+  "all-outputs": true,
+  "active-only": false,
+  "sort-by": "number",
+  "persistent-workspaces": {
+    "*": 6
+  }
+},
+    
+"keyboard-state": {
         "numlock": true,
         "capslock": true,
         "format": "{name} {icon}",
