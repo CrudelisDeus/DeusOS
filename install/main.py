@@ -3,8 +3,31 @@ import subprocess
 from pkg import std_pkg
 from pkg import home_and_work_pkg
 from pkg import work_pkg
+from pkg import nvidia_pkg 
 from services import services
 
+def nvidia_config() -> None:
+    try:
+        subprocess.run(
+            ['sudo', 'pacman', '-Scc', '--noconfirm'],
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        subprocess.run(
+            ['sudo', 'pacman', '-Syu', '--noconfirm'],
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        result = 0
+    except Exception as e:
+        result = 1
+
+    if result != 0:
+        print(f'nvd FAILED')
+    else:
+        print(f'nvd OK')
 
 def full_update() -> None:
     try:
@@ -65,7 +88,6 @@ def install_pkg(pkgs: list) -> None:
         else:
             print(f'pkg OK: {pkg}')
 
-
 def service_enable_and_start(services: list) -> None:
      for srv in services:
         try:
@@ -89,6 +111,10 @@ def main():
     install_pkg(std_pkg)
     service_enable_and_start(services)
     full_update()
+
+    # nvidia dirver
+    #install_pkg(nvidia_pkg)
+    #nvidia_config
 
     # home_and_work
     install_pkg(home_and_work_pkg)

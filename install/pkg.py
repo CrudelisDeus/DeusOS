@@ -1,4 +1,6 @@
 std_pkg = [
+    # python
+    "python3",
     # fonts
     "ttf-dejavu",
     "ttf-font-awesome",
@@ -59,6 +61,7 @@ std_pkg = [
     "neovim",
     "git",
     "base-devel",
+    "openssh",
 
     # mirrors
     "reflector",
@@ -78,6 +81,10 @@ std_pkg = [
 
     # lockscreen
     "hyprlock",
+
+    # usb auto mount
+    "udisks2",
+    "udiskie",
 ]
 
 home_and_work_pkg = [
@@ -90,9 +97,19 @@ home_and_work_pkg = [
 
     # notes
     "obsidian",
+
+    # english learn
+    "anki",
 ]
 
 work_pkg = [
     # vpn
     "strongswan",
+]
+
+nvidia_pkg = [
+    "nvidia-dkms",
+    "nvidia-utils",
+    "nvidia-settings",
+    "linux-headers",
 ]
