@@ -1,11 +1,13 @@
 std_pkg = [
     # python
     "python3",
+    
     # fonts
     "ttf-dejavu",
     "ttf-font-awesome",
     "ttf-nerd-fonts-symbols",
     "ttf-jetbrains-mono-nerd",
+    "noto-fonts",
 
     # wallpaper
     "hyprpaper",
@@ -28,9 +30,21 @@ std_pkg = [
     # XDG Desktop Portal
     "xdg-desktop-portal-hyprland",
     "xdg-desktop-portal-gtk",
+    "xdg-desktop-portal",
+
+    # polkit agent
+    "hyprpolkitagent",
 
     # status bar
     "waybar",
+
+    # qt wayland
+    "qt5-wayland",
+    "qt6-wayland",
+
+    # network
+    "networkmanager",
+    "network-manager-applet",
 
     # video
     "qt6-multimedia-ffmpeg",
