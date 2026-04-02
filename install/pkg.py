@@ -81,6 +81,7 @@ std_pkg = [
 
     # lockscreen
     "hyprlock",
+    "hypridle",
 
     # usb auto mount
     "udisks2",
