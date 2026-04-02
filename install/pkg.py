@@ -73,6 +73,9 @@ std_pkg = [
     # editor
     "vim",
     "neovim",
+    # neovim-github:
+    "nodejs",
+    "npm",
     "git",
     "base-devel",
     "openssh",
