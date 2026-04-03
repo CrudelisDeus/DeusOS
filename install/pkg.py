@@ -1,6 +1,6 @@
 std_pkg = [
     # python
-    "python3",
+    "python",
     
     # fonts
     "ttf-dejavu",
